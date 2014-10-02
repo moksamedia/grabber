@@ -1,0 +1,29 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin:'application'
+
+// PROJECT VERSION & GROUP
+project.version = 0.1
+project.group = 'com.moksamedia'
+
+mainClassName = 'com.moksamedia.grabber.Grabber'
+
+// CAPTURE STANDARD OUTPUT
+logging.captureStandardOutput(LogLevel.ERROR)
+
+repositories {
+	mavenCentral()
+}
+	
+dependencies {
+	
+	compile 'org.slf4j:slf4j-api:1.7.4',
+			'ch.qos.logback:logback-classic:1.0.1'  // Logback
+			//'org.slf4j:slf4j-log4j12:1.7.4',	    // Log4j
+			//'log4j:log4j:1.2.17'		
+	
+	compile 'org.codehaus.groovy:groovy-all:1.8.+'
+
+	compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7'
+	
+}

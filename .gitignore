@@ -1,0 +1,19 @@
+.DS_Store
+.classpath
+.settings/
+.project
+.gradle
+build/
+bin/
+*.iml
+*.ipr
+*.iws
+gradle.properties
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
